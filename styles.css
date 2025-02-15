@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.1;
+  }
+  
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px color-mix(in srgb-linear, color 50, color 50);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.1);
+  }
+  
+  .header-info {
+    margin-left: 20px;
+  }
+  
+  .header-info h1 {
+    margin: 0;
+    font-size: 2em;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .header-info p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #ecf0f1;
+    animation: slideIn 1.2s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .main-content h2 {
+    color: #5cabf9;
+    border-bottom: 2px solid #93e1f1;
+    padding-bottom: 5px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .job, .degree {
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .job h3, .degree h3 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+  
+  .company, .institution {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .date {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  
+  .sidebar {
+    padding: 20px;
+    background: #238df6;
+    color: #fff;
+  }
+  
+  .sidebar h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .skills ul, .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills ul li, .contact ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .skills ul li i, .contact ul li i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .cv-container {
+      flex-direction: row;
+    }
+  
+    .main-content {
+      flex: 3;
+    }
+  
+    .sidebar {
+      flex: 1;
+    }
+
+  }
