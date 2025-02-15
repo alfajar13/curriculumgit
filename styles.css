@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(500deg, #6a11cb, #2575fc);
     color: #fff;
     text-align: center;
   }
@@ -112,7 +112,7 @@ body {
   
   .sidebar {
     padding: 20px;
-    background: #238df6;
+    background: #8ed3ee;
     color: #fff;
   }
   
@@ -151,7 +151,7 @@ body {
     }
   
     .sidebar {
-      flex: 1;
+      flex: 10;
     }
 
   }
