@@ -26,6 +26,7 @@ header {
 header h1 {
     margin: 0;
     color: #007BFF;
+    border-bottom: 2px solid #27eacd; 
 }
 
 h2 {
